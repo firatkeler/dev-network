@@ -14,7 +14,9 @@ const config = require('config');
 
 const gravatar = require('gravatar');
 
-// @route POST api/users (Public) Register User
+// @route POST api/users
+// @desc Register User
+// @access Public
 router.post('/', [
     check('name', 'Name is required')
         .not()
